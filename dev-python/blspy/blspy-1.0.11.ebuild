@@ -66,7 +66,7 @@ src_unpack() {
 	mkdir -p ${RELIC_SRC_DIR} || die
 	EGIT_REPO_URI="https://github.com/Chia-Network/relic.git"
 	EGIT_OVERRIDE_BRANCH_CHIA_NETWORK_RELIC="aecdcae_local_cflags"
-	EGIT_OVERRIDE_COMMIT_CHIA_NETWORK_RELIC="1d98e5abf3ca5b14fd729bd5bcced88ea70ecfd7"
+	EGIT_OVERRIDE_COMMIT_CHIA_NETWORK_RELIC="215c69966cb78b255995f0ee9c86bbbb41c3c42b"
 	EGIT_CHECKOUT_DIR=${RELIC_SRC_DIR}
 	git-r3_src_unpack
 }
