@@ -67,7 +67,7 @@ src_prepare() {
 	eapply_user
 
 	# unpin deps
-	sed -i -e "s:>=.*':':" setup.py || die
+	sed -i -e "s:>=.*':\":" setup.py || die
 	sed -i -r 's/"([a-zA-Z0-9._\-]+)==.*"/"\1"/g' setup.py || die
 	use chiadns || eapply "${FILESDIR}"/${P}-dnspython.patch
 	eapply "${FILESDIR}"/${P}-all.patch
